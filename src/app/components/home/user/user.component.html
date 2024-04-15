@@ -1,0 +1,15 @@
+<header>
+  <button type="text" (click)="navigateTo('')">BACK</button>
+  <h1>Info User</h1>
+</header>
+<main>
+  @if(getUserData()) {
+  @defer (on viewport) {
+  <app-userdetails [userdetails]="getUserData()" />
+  } @placeholder {
+  <p>USER DATA</p>
+  } @loading {
+  <p>LOADING...</p>
+  }
+  }
+</main>

@@ -1,0 +1,9 @@
+<section>
+  @for(user of getUsersList(); track user.id) {
+  <article class="user-card">
+    <h2 class="user-card-name">{{ user.id }} - {{ user.name }}</h2>
+    <p class="user-card-email">{{ user.email }}</p>
+    <button type="text" (click)="navigateTo(user.id)">MORE INFO</button>
+  </article>
+  }
+</section>

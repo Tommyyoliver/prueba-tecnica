@@ -1,0 +1,14 @@
+.user-container {
+  width: 400px;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.user-container h3 {
+  text-align: center;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.user-container span {
+  font-weight: bold;
+}

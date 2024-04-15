@@ -1,0 +1,20 @@
+<article class="user-container">
+  <h3>User</h3>
+  <p>- <span>Name</span>: {{ userdetails.name }}</p>
+  <p>- <span>Username</span>: {{ userdetails.username }}</p>
+  <p>- <span>Email</span>: {{ userdetails.email }}</p>
+  <p>- <span>Phone</span>: {{ userdetails.phone }}</p>
+  <p>- <span>Website</span>: {{ userdetails.website }}</p>
+  <h3>Address</h3>
+  <p>- <span>Street</span>: {{ userdetails.address.street }}</p>
+  <p>- <span>Suit</span>: {{ userdetails.address.suite }}</p>
+  <p>- <span>City</span>: {{ userdetails.address.city }}</p>
+  <p>- <span>Zipcode</span>: {{ userdetails.address.zipcode }}</p>
+  <h3>Geo</h3>
+  <p>- <span>Lat</span>: {{ userdetails.address.geo.lat }}</p>
+  <p>- <span>Lng</span>: {{ userdetails.address.geo.lng }}</p>
+  <h3>Company</h3>
+  <p>- <span>Name</span>: {{ userdetails.company.name }}</p>
+  <p>- <span>CatchPhrase</span>: {{ userdetails.company.catchPhrase | shorten }}</p>
+  <p>- <span>Bs</span>: {{ userdetails.company.bs }}</p>
+</article>

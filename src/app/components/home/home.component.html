@@ -1,0 +1,12 @@
+<header>
+  <h1>Users List</h1>
+</header>
+<main>
+  @defer (on viewport) {
+  <app-userlist />
+  } @placeholder {
+  <p>USERLIST</p>
+  } @loading {
+  <p>LOADING...</p>
+  }
+</main>
