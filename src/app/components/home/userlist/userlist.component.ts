@@ -15,7 +15,7 @@ export class UserlistComponent implements OnInit {
   private _apiService = inject(ApiService);
   private _router = inject(Router);
 
-  private usersList: UserInterface[] = [];
+  private usersList: UserInterface[] = []; // variable que almacenara la lista de usuarios
 
   getUsersList() {
     return this.usersList;
@@ -27,7 +27,7 @@ export class UserlistComponent implements OnInit {
     })
   }
 
-  navigateTo(route: number) {
+  navigateTo(route: number) { // redirige hacia la ruta pasada por parametro
     this._router.navigate(["user/" + route]);
   }
 

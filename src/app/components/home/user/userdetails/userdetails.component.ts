@@ -11,6 +11,6 @@ import { ShortenPipe } from '../../../../pipes/shorten.pipe';
 })
 export class UserdetailsComponent {
 
-  @Input() userdetails: UserInterface;
+  @Input() userdetails: UserInterface; // variable que almacenara los datos del usuario enviados desde el padre
 
 }

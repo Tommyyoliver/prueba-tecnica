@@ -17,13 +17,13 @@ export class UserComponent implements OnInit {
   private _router = inject(Router);
   private _route = inject(ActivatedRoute);
 
-  private userData: UserInterface;;
+  private userData: UserInterface; // variable que almacenara los datos del usuario
 
   getUserData() {
     return this.userData;
   }
 
-  navigateTo(id: string): void {
+  navigateTo(id: string): void { // redirige hacia la ruta pasada por parametro
     this._router.navigate([id]);
   }
 
